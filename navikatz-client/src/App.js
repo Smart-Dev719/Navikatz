@@ -53,17 +53,18 @@ function App() {
     }
   };
   return (
-
-    <div className="App">
-      <Navbar />
-      <Banner
-        preLoading={preLoading}
-        setPreLoading={setPreLoading}
-        account={account}
-        metamaskConnected={metamaskConnected}
-        connectToMetamask={connectToMetamask}
-      />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Navbar />
+        <Banner
+          preLoading={preLoading}
+          setPreLoading={setPreLoading}
+          account={account}
+          metamaskConnected={metamaskConnected}
+          connectToMetamask={connectToMetamask}
+        />
+      </div>
+    </Provider>
   );
 }
 
