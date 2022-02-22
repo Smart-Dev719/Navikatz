@@ -4,6 +4,8 @@ import Footer from './footer.js';
 import Navbar from './navbar.js';
 import Banner from './banner.js';
 import Web3 from 'web3';
+import store from "./redux/store";
+import { Provider } from 'react-redux';
 
 function App() {
   // const [account, setAccount] = useState(); // state variable to set account.
